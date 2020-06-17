@@ -44,13 +44,14 @@ function screenAdjust(){
 
 //cerrar el video en la seccion de artistas
 function closeVideo(){
- 
-    video.className=("close-screen");
+    video.classList.remove("open-screen")
+    video.classList.add("close-screen");
   
 }
 // hacer visible el video
 function viewVideo(){
     video.classList.remove("close-screen");
+    video.classList.add("open-screen")
 }
 
 // ver video de amy
