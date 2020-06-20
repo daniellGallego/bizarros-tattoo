@@ -38,6 +38,10 @@ h4 {
     color: #fff5ee;
 }
 
+h6 {
+    color: #fff5ee;
+}
+
 hr {
     color: var(--color3);
     height: 0.5px;
@@ -86,7 +90,8 @@ nav {
 
 .nav1 {
     background-color: var(--color2);
-    box-shadow: 0 0 10px 0 rgba(54.12, 58.43, 59.22, 0.5);
+    box-shadow: 0 0 10px 0 rgba(141, 155, 158, 0.6);
+    height: 120px;
 }
 
 .nav2 {
@@ -126,6 +131,11 @@ nav {
     align-items: center;
     overflow: hidden;
 
+}
+
+.btn-header {
+    width: 20%;
+    text-align: center;
 }
 
 .container {
@@ -237,7 +247,7 @@ header a {
 
 .movie {
     margin-top: 0px;
-    padding:20px 0;
+    padding: 20px 0;
     width: 0%;
     height: 0px;
     display: flex;
@@ -254,13 +264,13 @@ header a {
 
 .close {
     margin-top: 0;
-    padding: 0 ;
+    padding: 0;
     margin-bottom: 0;
     color: #ff4040;
     text-align: right;
     width: 100%;
     height: 10%;
-    
+
 
 }
 
@@ -337,7 +347,7 @@ header a {
 
 .button-galery li:hover {
     cursor: pointer;
-    background-color: rgba(54.12, 58.43, 59.22, 0.7);
+    background-color: rgba(150, 171, 177, 0.7);
 
 
 }
@@ -346,7 +356,32 @@ header a {
     background: rgba(54.12, 58.43, 59.22, 0.7);
 }
 
+.galery-image {
+    margin-top: var(--marginSections);
 
+}
+
+.galery-image img {
+    width: 40%;
+    height: 400px;
+}
+
+.galery-btn {
+
+    margin: auto;
+    margin-top: 15px;
+    width: 20%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.5rem;
+    color: rgba(54.12, 58.43, 59.22, 0.9);
+}
+
+.galery-btn i:hover {
+    color: rgba(223, 219, 219, 0.7);
+    cursor: pointer;
+}
 
 /* footer */
 footer {
@@ -372,8 +407,23 @@ footer {
     justify-content: space-between;
 }
 
+.credits {
+    margin: 25px auto;
+    margin-bottom: 0;
+
+}
+
+.credits h6 {
+    margin: auto;
+
+    margin-bottom: 0;
+    font-family: cursive;
+}
+
+/* estilos interactivos */
 .close-screen {
-    /* display: none; */
+    /*display: none;
+    */
     height: 0;
     width: 0;
     margin: 0;
@@ -391,10 +441,10 @@ footer {
     width: 100%;
     font-size: 2rem;
     transition: 2s;
-    -webkit-transition: 2s;
-    -moz-transition: 2s;
-    -ms-transition: 2s;
-    -o-transition: 2s;
+    -webkit-transition: ;
+    -moz-transition: ;
+    -ms-transition: ;
+    -o-transition: ;
 }
 
 /* responsive */
@@ -405,6 +455,10 @@ footer {
 
     .logo {
         width: 35%;
+    }
+
+    .nav1 {
+        height: 120px;
     }
 
     .icono {
@@ -487,6 +541,10 @@ footer {
 
     }
 
+    .galery-image img {
+        width: 70%;
+        height: 400px;
+    }
 
 }
 
@@ -547,6 +605,18 @@ footer {
         padding-top: 2%;
         margin: 2.5% auto;
 
+    }
+
+    .galery-image img {
+        width: 80%;
+        height: 350px;
+    }
+
+    .galery-btn {
+        width: 50%;
+        height: auto;
+        margin-top: 5px;
+        font-size: 1.5rem;
     }
 
     .servicio-card h3 {
