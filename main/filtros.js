@@ -29,21 +29,21 @@ $(function () {
     $('#enlace-servicio').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: servicio - 130
+            scrollTop: servicio - 150
         }, 600);
     });
 
     $('#enlace-galeria').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: galeria - 120
+            scrollTop: galeria - 150
         }, 600);
     });
 
     $('#enlace-contacto').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: contacto - 120
+            scrollTop: contacto - 150
         }, 600);
     });
 

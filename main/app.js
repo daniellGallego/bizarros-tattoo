@@ -17,16 +17,15 @@ let piercing = document.getElementById("filter-piercing");
 let micro = document.getElementById("filter-micro");
 let todos = document.getElementById("filter-todos")
 let i = 0;
+let gal;
 
 
 // arrays galery
-const tattooArr = ["img/tattoo1.jpeg", "img/tattoo2.jpeg", "img/tattoo3.jpeg", "img/tattoo4.jpeg",
-    "img/tattoo5.jpeg", "img/tattoo6.jpeg", "img/tattoo7.jpeg"
-];
+const tattooArr = ["img/t1.jpeg", "img/t2.jpeg", "img/t3.jpeg", "img/t4.jpeg", "img/t5.jpeg", "img/t6.jpeg", "img/t7.jpeg", "img/t8.jpeg", "img/t9.jpeg", "img/t10.jpeg", "img/t11.jpeg", "img/t12.jpeg", "img/t13.jpeg", "img/t14.jpeg", "img/t15.jpeg", "img/t16.jpeg", "img/t17.jpeg", "img/t18.jpeg", "img/t19.jpeg", "img/t20.jpeg", "img/t21.jpeg", "img/t22.jpeg", "img/t23.jpeg"];
 
-const microArr = ["img/micro1.jpeg", "img/micro2.jpeg", "img/micro.jpeg"];
+const microArr = ["img/micro1.jpeg", "img/micro2.jpeg", "img/micro3.jpeg", "img/micro4.jpeg", "img/micro5.jpeg", "img/micro6.jpeg", "img/micro7.jpeg", "img/micro8.jpeg", "img/micro9.jpeg", "img/micro10.jpeg", "img/micro11.jpeg", "img/micro12.jpeg", "img/micro13.jpeg", "img/micro14.jpeg", "img/micro15.jpeg", "img/micro16.jpeg", "img/micro17.jpeg", "img/micro18.jpeg"];
 
-const piercingArr = ["img/piercing1.jpeg", "img/piercing2.jpeg", "img/piercing3.jpeg", "img/piercing4.jpeg"];
+const piercingArr = ["img/piercing1.jpeg", "img/piercing2.jpeg", "img/piercing3.jpeg", "img/piercing4.jpeg", "img/pircing01.jpeg"];
 
 var todosArr = tattooArr.concat(microArr).concat(piercingArr);
 
@@ -95,6 +94,7 @@ function playW() {
 }
 
 // funcion recorrer siguiente galeria
+
 function tattooF() {
     gal = tattooArr;
     var galery = document.getElementById("galery-slider");
@@ -110,7 +110,7 @@ function microF() {
 function piercingF() {
     gal = piercingArr;
     var galery = document.getElementById("galery-slider");
-    galery.src = "img/galerylogo.jpeg";
+
 }
 
 function todosF() {
@@ -118,6 +118,8 @@ function todosF() {
     var galery = document.getElementById("galery-slider");
     galery.src = "img/galerylogo.jpeg";
 }
+
+gal = todosArr;
 
 function nextPhoto() {
 

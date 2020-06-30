@@ -46,7 +46,7 @@ hr {
     color: var(--color3);
     height: 0.5px;
     width: 100%;
-    margin-top: 45px;
+    margin-top: 20px;
 }
 
 p {
@@ -318,6 +318,20 @@ header a {
 }
 
 /* galerias */
+#galeria {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(22, 22, 22, 0.651),
+            rgba(15, 15, 14, 0.45)), url(../img/fondo5.jpeg);
+
+    background-repeat: repeat;
+    background-size: 200px 200px;
+
+    background-position: center;
+}
+
+#galeria h2 {
+    margin-top: 0;
+}
+
 .galery-card {
     width: 30%;
     height: 300px;
@@ -375,7 +389,7 @@ header a {
     display: flex;
     justify-content: space-between;
     font-size: 2.5rem;
-    color: rgba(54.12, 58.43, 59.22, 0.9);
+    color: rgba(43, 47, 48, 0.9);
 }
 
 .galery-btn i:hover {
@@ -386,6 +400,7 @@ header a {
 /* footer */
 footer {
     background: var(--color2);
+
     color: var(--color1);
 }
 
