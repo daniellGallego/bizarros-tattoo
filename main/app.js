@@ -15,7 +15,8 @@ let next = document.getElementById("next");
 let tattoo = document.getElementById("filter-tattoo");
 let piercing = document.getElementById("filter-piercing");
 let micro = document.getElementById("filter-micro");
-let todos = document.getElementById("filter-todos")
+let todos = document.getElementById("filter-todos");
+let msj = document.getElementById("redes-msj");
 let i = 0;
 let gal;
 
@@ -41,11 +42,11 @@ videoAmy.addEventListener("click", playAmy);
 videoW.addEventListener("click", playW);
 prev.addEventListener("click", prevPhoto);
 next.addEventListener("click", nextPhoto);
-tattoo.addEventListener("click", tattooF)
-micro.addEventListener("click", microF)
-piercing.addEventListener("click", piercingF)
-todos.addEventListener("click", todosF)
-
+tattoo.addEventListener("click", tattooF);
+micro.addEventListener("click", microF);
+piercing.addEventListener("click", piercingF);
+todos.addEventListener("click", todosF);
+window.addEventListener("load", fontColor);
 
 // funciones
 // abrir menu y cerrar menu responsive
@@ -142,5 +143,23 @@ function prevPhoto() {
         i = gal.length - 1
     }
     galery.src = gal[i];
+
+}
+
+function fontColor() {
+    var msj = document.getElementById("redes-msj");
+    var color = ["#fff5ee", "#845c2b"];
+    var i = 0;
+
+    function cambio() {
+        msj.style.color = color[i];
+        i++;
+        if (i > color.length - 1) {
+            i = 0;
+        }
+
+    }
+    setInterval(cambio, 800);
+
 
 }
